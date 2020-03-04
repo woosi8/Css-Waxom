@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style media="screen">
+      .video{background: url(../images/video_bg.jpg) no-repeat center center/cover; height: 750px;
+              position: relative;}
+      .video .contents {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+              text-align: center; }
+      .video .contents *{color:#fff }
+      .video .contents .icon {font-size:4em; width: 100px; height: 100px; background: rgba(0,0,0,.2); text-align: center;
+                              line-height: 100px; border-radius: 50%; display: inline-block; margin-bottom: 45px;}
+      .video .contents .h3 { margin-top: 45px;}
+      .video .contents span {color: #c7b299;}
+
+      /* CSS로 동영상 퍼오기 */
+      #overlay{ position: fixed; left: 0; right: 0; top: 0; bottom: 0; background: rgba(0,0,0,.8);
+                opacity: 0; transition: 0.5s; pointer-events: none;}
+      #overlay .inner{ position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);}
+      #overlay .close{ position: absolute; width: 2rem; height: 2rem; background: #fff; color: #000; border-radius: 50%; top: -1rem; right: -1rem;
+                        text-align: center; text-decoration: none; }
+      #overlay:target { opacity: 1; pointer-events: auto;}
+
+    </style>
+  </head>
+  <body>
+    <section class="video">
+      <div class="contents">
+        <a class="icon" href="#overlay"><i class="far fa-play-circle"></i></a>
+        <h3 class="content_tt">Waxom Video Presentation</h3>
+        <p class="content_desc">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</p>
+        <span>03:26</span>
+      </div>
+
+      <div id="overlay">
+          <div class="inner">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/fJFhunVnilM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>              <a href="" class="close">X</a>
+          </div>
+      </div>
+    </section>
+
+  </body>
+</html>

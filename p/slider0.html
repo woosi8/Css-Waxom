@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="http://malsup.github.com/jquery.cycle2.js"></script>
+
+  <!-- transition:carousel  >우클릭>페이지 소스보기>22,23줄 복사-->
+  <script src="http://malsup.github.io/jquery.cycle2.carousel.js"></script>
+  <script>
+    $.fn.cycle.defaults.autoSelector = '.slider-list';
+  </script>
+
+  <style media="screen">
+
+    .slider-list li {
+      height: 100vh;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      /* background-position: center top;
+      text-align: center; */
+      text-indent: -9999em;
+    }
+
+    .slider-list li.slider1 {
+      background-image: url(../images/mainslide_01.jpg)
+    }
+
+    .slider-list li.slider2 {
+      background-image: url(../images/mainslide_02.jpg)
+    }
+
+    .slider-list li.slider3 {
+      background-image: url(../images/mainslide_03.jpg)
+    }
+
+    .controls a{
+      z-index: 120;
+      background: url(../images/sprites.png) no-repeat;
+      background-color: #fff;
+      position: absolute;
+      left: 50%; top: 50%; transform: translate(-50%, -50%);
+        }
+      .slider .controls .prev{background-position:0 -77px; margin-left: -789px;}
+
+      .slider .controls .next{background-position:-40px -77px; margin-left:789px; }
+
+      .pager{
+        left: 50%;
+        transform: translate(-50%);
+        position: absolute;
+        bottom: 40px;
+        color: #fff;
+        z-index: 130;
+        }
+      .pager span{
+        width: 11px; height: 11px;
+        border: 2px solid transparent;
+        background: rgba(255,255,255,0.5);
+        border-radius: 50%;
+        text-indent: -9999em;
+        display: inline-block;
+        float: left; margin-right: 10px;
+      }
+  </style>
+</head>
+
+<body>
+  <div class="slider">
+
+    <ul class="slider-list"
+    data-cycle-fx=scrollHorz
+    data-cycle-timeout=2000
+    data-cycle-slides="> li"
+
+    data-cycle-next=".next"
+    data-cycle-prev=".prev"
+    data-cycle-pager=".pager">
+      <li class="slider1">a</li>
+      <li class="slider2">b</li>
+      <li class="slider3">c</li>
+    </ul>
+
+    <div class="controls">
+      <a href="#" class="prev">a</a>
+      <a href="#" class="next">b</a>
+    </div>
+    <p class="pager"></p>
+
+  </div>
+</body>
+
+</html>
