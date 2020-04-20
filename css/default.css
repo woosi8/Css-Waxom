@@ -10,7 +10,7 @@
   text-align: center;
   /* 너비 줄여도 그대로 적용되게 너비를 100%준다 */
   width: 100%;
-  background-position: center top;
+  /* background-position: center top; */
 
 }
 
@@ -199,8 +199,11 @@ transition: 0.3s;}
 .project_list li .content p{font-size: 14px; color: #d1d1d1;}
 
 .project_list li .imgWrap{position: relative;}
-.project_list li .hover_contents{position: absolute; background: rgba(0,0,0,.7);
-left: 0; right: 0; bottom: 0; top: 0; text-align: center; padding-top: 116px; opacity: 0;transition: 0.5s}
+.project_list li .hover_contents{
+  position: absolute; background: rgba(0,0,0,.7);
+left: 0; right: 0; bottom: 0; top: 0; text-align: center;
+ padding-top: 116px; opacity: 0;transition: 0.5s
+}
 .project_list li .hover_contents a {
   color: #fff; margin: 0 15px; font-size: 26px;
 }
