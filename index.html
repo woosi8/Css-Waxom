@@ -33,7 +33,6 @@
   <script src="https://malsup.github.io/jquery.cycle2.carousel.js"></script>
 
 
-  <script src="https://kit.fontawesome.com/d6ae544de2.js" crossorigin="anonymous"></script>
 
   <!-- bx slider / bxslider.com > install> 복사   -->
   <!--우리 디자인과 안맞는다 <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"> -->
@@ -41,6 +40,9 @@
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   <script>
     $(document).ready(function() {
+      
+ 
+      
       // 중가로를 넣고 옵션값을 바꿔준다
       $('.posts_list').bxSlider({
         minSlides: 1,
@@ -52,12 +54,14 @@
         nextSelector: '.controls .next',
         prevSelector: '.controls .prev'
       });
+
+
       //메뉴 토글 버튼
       $(".toggle").click(function() {
         $(".main-menu").slideToggle();
       });
 
-      // 위에 토글 버튼이 클로즈 된 상태에서 브라우저 창이 pc로 커지면 여전히 메뉴가 사라져 있는 문제가 발생. 이건 script로 수정해야가능
+           // 위에 토글 버튼이 클로즈 된 상태에서 브라우저 창이 pc로 커지면 여전히 메뉴가 사라져 있는 문제가 발생. 이건 script로 수정해야가능
       // 너비가 768이상이 되면 메뉴가 다시 나타나야한다
       // 1 브라우저 너비를 구해오는 방법 2 브라우저에 사이즈가 바뀌는 방법(if)
       $(window).resize(function() {
@@ -66,17 +70,15 @@
         } else {
           $(".main-menu").hide();
         }
-
+        
       });
+
 
     });
   </script>
   <!-- 항상 내가 작성하는 css는 최하단에 있어야 수정 가능하다 -->
   <link rel="stylesheet" href="css/default.css">
 </head>
-<!-- container는 전체가 아닌 일정 크기를 쓰는 공통 요소들에게 지정해준다
-      전체 배경을 따로 줘야하는 애들은 경우에따라 자식에게 컨테이너가 필요.-->
-
 <body>
   <header>
     <div class="container clearfix">

@@ -2,57 +2,28 @@
 
 ## Introduction
 
-I made simple css compilations.
+Make clone Web site by Jquery
 
 ## What kind of skills
 
-### Multiple Columns
+### Toggle by Jquery
 
-Make text design by text-shadow
-Divide paragraphs by columns,column-rule.
+Paste website address(Jquery) in Head
+Add or remove class what you want
+when you click toggle button, main-menu class will work on toggle ( show or hide class)
 
-### Loading Animation
+### Cycle2 slider library by Jquery
 
-Make Animation by keyframes, and put setting value each 0%,34%,35%,45%,100%
+Paste website address(cycle2 slide library) http://jquery.malsup.com/cycle2/demo/
+Put class name cycle-slideshow and data values into the class what you want
 
-### Link Animation
+### Filter by css
 
-When you hover blue words, it will show you animations
+Link input and label by id,name(input) and for(label)
+Link class(li) and input by className,id(input)
 
-Showing hidden texts by position(top,right,bottom,left values) and before method
+### Bxslider by Jquery
 
-### Transform Rotate
-
-Rotated card by perspective and preserve-3d method
-
-When you hover card, it will rotated and backface hidden
-
-### Background Mask
-
-Affect background-image by background-attachment fixed
-
-### Display Flex,Animation
-
-Make effect by flex number
-
-When you hover this, it will extend from flex:1 to 3
-
-### Button Animation
-
-When you hover buttons, each buttons show you some transformations
-
-Put z-index:1 in button and put z-index:-1 in button:before for showing when you hover
-
-Put value direction in each slides:before for showing where the hidden button comes from
-
-### Box
-
-Put value direction in each grow classes for showing where the hidden grow comes from
-
-### Cube Animation
-
-Rotating Cube infinitely.
-
-you can move to any side you want clicking buttons
-
-When you click buttons , clicked inputClass make cubeClass move to the side by transform value
+Set Jqeury in index.html
+Put parent class name what you want to make bxslider (.posts_list')
+it can setup what you want how many sliders, slidewidth,margin....
